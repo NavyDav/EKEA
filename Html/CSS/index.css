@@ -1,0 +1,49 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap');
+
+Body{
+width: 100%;
+height: 100%;
+margin: 0 0;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap');
+
+}
+
+header{
+    display: flex;
+    background: #B7B7A4;
+    width: 100%;
+    height: 5rem;
+}
+
+#Titre{
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    display: flex;
+}
+
+nav li a{ 
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: ;
+
+}
+
+nav li{
+    display:flex;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+nav {
+    display: none;
+}
+
+
