@@ -19,7 +19,7 @@ Body{
         justify-content: center;
         display: flex;
         position: absolute;
-        margin: 5% 41%;
+        margin: 6% 41%;
     }
     .item1 {
         width: 20px;
@@ -53,6 +53,9 @@ Body{
     
     }
     
+    img{
+      width: 100%;
+    }
     nav li{
         display:block;
         justify-content: space-between;
