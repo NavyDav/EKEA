@@ -1,49 +1,260 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap');
-
 Body{
-width: 100%;
-height: 100%;
-margin: 0 0;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap');
-
-}
-
-header{
-    display: flex;
-    background: #B7B7A4;
     width: 100%;
-    height: 5rem;
-}
+    height: 100%;
+    margin: 0 0;
+    }
+    
+    header{
+        display: flex;
+        background: #B7B7A4;
+        width: 100%;
+        height: 5rem;
+    }
+    
+    #titre{
+        color: rgb(0, 0, 0);
+        justify-content: center;
+        display: flex;
+        position: absolute;
+        margin: 5% 41%;
+    }
+    .item1 {
+        width: 20px;
+        height: 20px;
+        margin: 5% 0 0 5%;
+    }
+    
+    .item2 {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        justify-content: end;
+        align-items: flex-end;
+        margin: 5% 90%;
+    }
+    .burger{
+        border: none;
+        background: none;
+    }
+    nav{
+        display: none;
+    }
+    nav li a{ 
+        display:flex;
+        justify-content: space-between;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: ;
+    
+    }
+    
+    nav li{
+        display:block;
+        justify-content: space-between;
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .banner {
+        text-align: center;
+        background: #B7B7A4;
+        margin-top: -6%;
+    }
+    .banner2 {
+        text-align: center;
+        background: #e3e3bf;
+    }
+    
+    .voirplus{
+        border-radius: 25px;
+        color:grey
+    }
 
-#Titre{
-    color: rgb(0, 0, 0);
-    justify-content: center;
-    display: flex;
-}
+      .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+      }
+    
 
-nav li a{ 
-    display:flex;
-    justify-content: space-between;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-family: ;
 
-}
 
-nav li{
-    display:flex;
-    justify-content: space-between;
-    text-decoration: none;
-    font-size: 20px;
-    text-align: center;
-}
-
-nav {
-    display: none;
-}
-
+@media screen and (min-width: 475px){
+    Body{
+        width: 100%;
+        height: 100%;
+        margin: 0 0;
+        }
+        
+        header{
+            display: flex;
+            background: #B7B7A4;
+            width: 100%;
+            height: 5rem;
+        }
+        
+        #titre{
+            color: rgb(0, 0, 0);
+            justify-content: center;
+            display: flex;
+            position: absolute;
+            margin: 5% 41%;
+        }
+        .item1 {
+            width: 20px;
+            height: 20px;
+            width: 40x;
+            height: 30px;
+            margin: 5% 0 0 5%;
+        }
+        
+        .item2 {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            justify-content: end;
+            align-items: flex-end;
+            margin: 5% 90%;
+        }
+        .burger{
+            border: none;
+            background: none;
+        }
+        nav{
+            display: none;
+        }
+        nav li a{ 
+            display:flex;
+            justify-content: space-between;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: ;
+        
+        }
+        
+        nav li{
+            display:block;
+            justify-content: space-between;
+            text-decoration: none;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        .banner {
+            text-align: center;
+            background: #B7B7A4;
+            margin-top: -6%;
+        }
+        .banner2 {
+            text-align: center;
+            background: #e3e3bf;
+        }
+        
+        .voirplus{
+            border-radius: 25px;
+            color:grey
+        }
+    }
+          .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0, 0.9);
+            overflow-x: hidden;
+            transition: 0.5s;
+          }
+          
+          .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+          }
+          
+          .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+          }
+          
+          .overlay a:hover, .overlay a:focus {
+            color: #f1f1f1;
+          }
+          
+          .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+          }
+          
+          @media screen and (max-height: 450px) {
+            .overlay a {font-size: 20px}
+            .overlay .closebtn {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+            }
+          }
+        
 
