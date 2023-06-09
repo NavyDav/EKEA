@@ -13,56 +13,69 @@
 
 <body>
 
-  <header>
-    <h1 id="titre">e.kea</h1>
-    <style>
 
-    </style>
-    </head>
-
-    <body>
-
-      <button class="burger" id="openNav" onclick="openNav()"><img class="item1"
-          src="ressources images e-kea/🦆 icon _menu_.png"></button>
+<header>
+    
+ <nav>
+    <button class="burger" id="openNav" onclick="openNav()"><img class="item1" src="ressources images e-kea/🦆 icon _menu_.png"></button>
       <button class="burger" onclick="closeNav()"></button>
-      <img class="item2" src="ressources images e-kea/panier.png">
+     
       <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-          <a href="#">Accueil</a>
-          <a href="#">Inspirations</a>
-          <a href="#">Nos Services</a>
-          <a href="#">Nous Contacter</a>
+          <a href="index.html">Accueil</a>
+          <a href="inspiration.html">Inspirations</a>
+          <a href="Produits.html">Produits</a>
+          <a href="service.html">Nos Services</a>
+          <a href="contact.html">Nous Contacter</a>
+          
         </div>
       </div>
+      <h1 id="titre">e.kea</h1>
+      <button class="panier"><a href="panier.html"><img class="item2" src="ressources images e-kea/panier.png"></a></button>
+    </nav>
 
 
   </header>
-
-  <section>
-
-    <div class="banner">
+  <div class="container0">
+<div class="banner">
       <h2>Bienvenue</h2>
       <p>Bienvenue dans notre univers de meubles et décoration ! Explorez des inspirations pour créer votre espace
         idéal. Découvrez des pièces uniques et de qualité pour embellir votre intérieur.</p>
     </div>
+  </div>
 
-    <div class="banner2">
-      <h2>Nos Inspirations</h2>
-      <p>Découvrez nos inspirations</p>
-      <button class="voirplus">Voir plus</button>
+  <section>
+
+    
+    <div class="container">
+            <div class="banner2">
+              <h2>Nos Inspirations</h2>
+              <p>Découvrez nos inspirations</p>
+              <a href="inspiration.html"><button class="voirplus">Voir plus</button></a>
+            </div>
+          
+            <div class="img1"><img src="ressources images e-kea/img5.jpeg" alt="Accueil"></div>
+    
+      </div>
+
+  <div class="container2">
+    <div class="banner3">
+      <h2>Nos Services</h2>
+      <p>Découvrez nos Services</p>
+      <a href="service.html"><button class="voirplus">Voir plus</button></a>
     </div>
-
-    <div>
-      <img src="ressources images e-kea/img5.jpeg" alt="Accueil">
+    <div class="img2"><img src="ressources images e-kea/header_produit.jpeg" alt="Accueil"></div>
     </div>
-
+    
   </section>
 
 
   <footer>
-<h2>e-kea</h2>
-<p>Nous Contacter</p>
+      <Div class="foot">
+        <h2>e-kea</h2>
+        <p><a href="contact.html" style="text-decoration: none;color: white;">Nous Contacter</a></p>
+      </Div>
 
 
   </footer>
