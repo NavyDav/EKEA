@@ -1,0 +1,586 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap");
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: inter;
+}
+
+header {
+  display: flex;
+  background: #CB997E;
+  width: 100%;
+  height: 5rem;
+}
+button.panier {
+  display: flex;
+  border: none;
+  background: none;
+  width: 30vw;
+  height: 30vh;
+  position: absolute;
+  margin: 3% 64%;
+}
+
+#titre {
+  color: rgb(0, 0, 0);
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  margin: 6% 41%;
+}
+.item1 {
+  width: 20px;
+  height: 20px;
+  margin: 5% 0 0 5%;
+}
+
+.item2 {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  justify-content: end;
+  align-items: flex-end;
+  margin: 0rem -2rem;
+  
+}
+.burger {
+  border: none;
+  background: none;
+}
+nav {
+  Display: flex;
+  height: 15vh;
+  width: 100vw;
+  margin: 0%;
+}
+nav li a {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: inter;
+}
+
+.img1 {
+  width: 0%;
+  height: 0%;
+}
+h1{
+  text-align: center;
+  font-family: inter;
+}
+
+
+.img2{
+  width: 0%;
+  height: 0%;
+}
+
+
+nav li {
+  display: block;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+
+    button.panier {
+      display: flex;
+      border: none;
+      background: none;
+      width: 30vw;
+      height: 30vh;
+      position: absolute;
+      margin: 3% 64%;
+  }
+
+footer{
+  background: grey;
+  margin: -5% 0%;
+  width: 100vw;
+  height: 15vh;
+}
+
+.foot{
+  text-align: center;
+  /* background: grey; */
+  color: white;
+  margin: 5% 0%;
+}
+
+.voirplus {
+  border-radius: 25px;
+  color: grey;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+.img1 img {
+    width: 0%;
+    height: 0%;
+}
+
+.img2 img {
+
+  width: 0%;
+  height: 0%;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #A76F51;
+  color: white;
+  float: left;
+  border: solid black 1px;
+  outline: solid black 1px;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  box-shadow: #777;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: #C7815C;}
+#News {background-color: #C7815C;}
+
+.tabdiv{
+display: flex;
+justify-content: space-between;
+}
+
+
+/* Caroussel */
+
+  img .lol{
+    width: 100vw;
+    height: 17vh;
+    }
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+        @media screen and (min-width: 475px) {
+          Body {
+            width: 100%;
+            height: 100%;
+            margin: 0 0;
+          }
+
+          header {
+            display: flex;
+            background: #CB997E;
+            width: 100%;
+            height: 5rem;
+          }
+
+          #titre {
+            color: rgb(0, 0, 0);
+            justify-content: center;
+            display: flex;
+            position: absolute;
+            margin: 4% 46%;
+          }
+          .item1 {
+            width: 20px;
+            height: 20px;
+            margin: 5% 0 0 5%;
+          }
+
+  .item2 {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    /* justify-content: end; */
+    /* align-items: flex-end; */
+    margin: -1rem -1rem;
+}
+  }
+  .burger {
+    border: none;
+    background: none;
+  }
+  nav {
+    Display: flex;
+    height: 15vh;
+    width: 100vw;
+    margin: 0%;
+  }
+  nav li a {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: ;
+  }
+
+  nav li {
+    display: block;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+  }
+  button.panier {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    justify-content: end;
+    align-items: flex-end;
+    margin: 4% 96%;
+  }
+
+
+.img1 img{
+  width: 50vw;
+  height: 50vh;
+}
+
+.img1{
+  width: 50%;
+}
+
+
+.img2{
+      width: 50vw;
+    height: 50vh;
+}
+
+.img2 img{
+  width: 400Px;
+    height: 400Px;
+  margin: 0% 0%;
+  visibility: visible;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #A76F51;
+  color: white;
+  float: left;
+  border: solid black 1px;
+  outline: solid black 1px;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  box-shadow: #777;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: #C7815C;}
+#News {background-color: #C7815C;}
+
+.tabdiv{
+display: flex;
+justify-content: space-between;
+}
+  
+img .lol{
+  width: 100vw;
+  height: 17vh;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@media screen and (max-width: 470px) {
+  .img1 img{
+    display: none;
+   }
+  .img2{
+    display: none;
+  }
+  }
+
+
+@media screen and (max-height: 470px){
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}

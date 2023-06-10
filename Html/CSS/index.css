@@ -238,7 +238,7 @@ footer{
     position: absolute;
     justify-content: end;
     align-items: flex-end;
-    margin: 4% 96%;
+    margin: -40% -85%;
   }
   .burger {
     border: none;

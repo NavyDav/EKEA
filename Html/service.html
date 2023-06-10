@@ -5,8 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
-  <link href="CSS/index.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/service.css" rel="stylesheet" type="text/css" />
+  <script src="slider.js"></script>
   <script src="index.js"></script>
+  <script src="tabs.js"></script>
+  
+  <title>Nos Services</title>
 </head>
 
 
@@ -14,25 +18,101 @@
 
     <header>
         <h1 id="titre">e.kea</h1>
-        <style>
+    
           
-          </style>
-          </head>
-          <body>
+          
             
             <button class="burger" id="openNav" onclick="openNav()"><img  class="item1" src="ressources images e-kea/🦆 icon _menu_.png"></button>
             <button class="burger" onclick="closeNav()"></button>
-            <img class="item2" src="ressources images e-kea/panier.png">
-          <div id="myNav" class="overlay">
+            <button class="panier"><a href="panier.html"><img class="item2" src="ressources images e-kea/panier.png"></a></button>
+            <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-              <a href="#">Accueil</a>
-              <a href="#">Inspirations</a>
+              <a href="index.html">Accueil</a>
+              <a href="inspiration.html">Inspirations</a>
               <a href="Produits.html">Produits</a>
-              <a href="#">Nos Services</a>
-              <a href="#">Nous Contacter</a>
+              <a href="service.html">Nos Services</a>
+              <a href="contact.html">Nous Contacter</a>
             </div>
           </div>
           
-  
     </header>
+<section>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img class="lol" src="ressources images e-kea/carton.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="ressources images e-kea/Card.png" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <!-- Les boutons -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    
+  </div>
+  <br>
+        <h1>Nos Services</h1>
+<div class="tab">
+<button class="tablink" onclick="openPage('Home', this, '#C7815C')">Nos services de livraison</button>
+<button class="tablink" onclick="openPage('News', this, '#C7815C')" id="defaultOpen">Nos modes de paiment</button>
+<div id="Home" class="tabcontent">
+
+    <div class="tabdiv"> 
+    
+        <div class="para0">
+            <p>Petit colis : Chronopost (articles de moins de 12,5kg) 9.90 €</p> 
+            <p>Livraison domicile par transporteur :</p> 
+            <p>39€ pour un achat inférieur à 400€ </p>
+                <p>59€ pour un achat​​ supérieur à 400€ et inférieur à 1000€</p> 
+                <p>109€ pour un achat supérieur à 1000€</p>
+            
+        </div>
+        <div class="img1">
+            <img class="img1" src="ressources images e-kea/img-services.jpeg" alt="service">
+        </div>
+    </div>
+   
+        
+</div>
+  
+  <div id="News" class="tabcontent">
+    <div class="tabdiv">
+    <div class="para1">
+        <p>Paiement par carte bancaire</p>
+    <p>Paiement 4x sans frais</p>
+           <p>Paiment par PayPal</p>
+        </div>
+        <div>
+            <img class="img2" src="ressources images e-kea/markus-winkler-ahjzVINkuCs-unsplash 1.png" alt="credit">
+        </div>
+    </div>
+  </div>
+</div>
+</section>
+   
+
+    <footer>
+        <Div class="foot">
+            <h2>e-kea</h2>
+            <p><a href="contact.html" style="text-decoration: none;color: white;">Nous Contacter</a></p>
+          </Div>
+    
+    
+    </footer>
+    <script src="slider.js"></script>
+    <script src="index.js"></script>
+    <script src="tabs.js"></script>
+    
+    </body>
+
+</html>
+    
