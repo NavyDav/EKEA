@@ -5,34 +5,77 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
-  <link href="CSS/index.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/contact.css" rel="stylesheet" type="text/css"/>
   <script src="index.js"></script>
+  <script scr="load.js"></script>                                                                                                                                                              
+  <title>e.kea</title>
 </head>
 
 
-<body>
+<body onload="myFunction()" style="margin:0;">
 
-    <header>
-        <h1 id="titre">e.kea</h1>
-        <style>
+
+<header>
+    
+ <nav>
+    <button class="burger" id="openNav" onclick="openNav()"><img class="item1" src="ressources images e-kea/🦆 icon _menu_.png"></button>
+      <button class="burger" onclick="closeNav()"></button>
+     
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html">Accueil</a>
+          <a href="inspiration.html">Inspirations</a>
+          <a href="Produits.html">Produits</a>
+          <a href="service.html">Nos Services</a>
+          <a href="contact.html">Nous Contacter</a>
           
-          </style>
-          </head>
-          <body>
-            
-            <button class="burger" id="openNav" onclick="openNav()"><img  class="item1" src="ressources images e-kea/🦆 icon _menu_.png"></button>
-            <button class="burger" onclick="closeNav()"></button>
-            <img class="item2" src="ressources images e-kea/panier.png">
-          <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-              <a href="#">Accueil</a>
-              <a href="#">Inspirations</a>
-              <a href="Produits.html">Produits</a>
-              <a href="#">Nos Services</a>
-              <a href="#">Nous Contacter</a>
-            </div>
-          </div>
-          
-  
+        </div>
+      </div>
+      <h1 id="titre">e.kea</h1>
+      <button class="panier"><a href="panier.html"><img class="item2" src="ressources images e-kea/panier.png"></a></button>
+    </nav>
+
     </header>
+
+    <section>
+      <h1>Nous Contacter</h1>
+      <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Angleterre</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="usa">France</option>
+            <option value="usa">Wakanda</option>
+            <option value="usa">Maroc</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+
+    </section>
+
+    <footer>
+      <Div class="foot">
+        <h2>e-kea</h2>
+        <p><a href="contact.html" style="text-decoration: none;color: white;">Nous Contacter</a></p>
+      </Div>
+    
+    
+    </footer>
+</body>
+</html>

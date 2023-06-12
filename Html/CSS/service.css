@@ -278,7 +278,7 @@ justify-content: space-between;
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+/* Position du boutton next*/
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -290,7 +290,7 @@ justify-content: space-between;
 }
 
 
-/* The dots/bullets/indicators */
+/* ronds de selection */
 .dot {
   cursor: pointer;
   height: 15px;
