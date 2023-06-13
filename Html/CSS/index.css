@@ -28,21 +28,21 @@ header {
 .item2 {
   width: 20px;
   height: 20px;
-  position: absolute;
-  justify-content: end;
-  align-items: flex-end;
-  margin: 6% 90%;
 }
+
 .burger {
   border: none;
   background: none;
 }
 nav {
-  Display: flex;
-  height: 15vh;
+  display: flex;
   width: 100vw;
+  justify-content: space-between;
   margin: 0%;
+  align-items: center;
+  background-color: beige;
 }
+
 nav li a {
   display: flex;
   justify-content: space-between;
@@ -50,7 +50,7 @@ nav li a {
   text-decoration: none;
   color: white;
   font-size: 20px;
-  font-family: ;
+  font-family: inter;
 }
 
 .img1{
@@ -253,10 +253,11 @@ footer{
   100% { transform: rotate(360deg); }
 }
 
-#conteneur-chargement {
+#myDiv {
   display: none;
   text-align: center;
 }
+
 
 
         @media screen and (min-width: 475px) {
@@ -289,20 +290,20 @@ footer{
   .item2 {
     width: 20px;
     height: 20px;
-    position: absolute;
-    justify-content: end;
-    align-items: flex-end;
-    margin: -40% -85%;
   }
   .burger {
     border: none;
     background: none;
   }
   nav {
-    Display: flex;
-    height: 15vh;
+    display: flex;
+    /* height: 15vh; */
     width: 100vw;
+    justify-content: space-between;
     margin: 0%;
+    align-items: center;
+    background-color: beige;
+}
   }
   nav li a {
     display: flex;
@@ -311,7 +312,7 @@ footer{
     text-decoration: none;
     color: white;
     font-size: 20px;
-    font-family: ;
+    font-family: inter;
   }
 
   nav li {
@@ -444,7 +445,7 @@ footer{
     right: 45px;
     font-size: 60px;
   }
-}
+
 
 @media screen and (max-height: 450px) {
   .overlay a {

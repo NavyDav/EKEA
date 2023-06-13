@@ -6,15 +6,20 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="CSS/index.css" rel="stylesheet" type="text/css"/>
-  <script src="index.js"></script>
-  <script scr="load.js"></script>                                                                                                                                                              
+                                                                                                                                                           
   <title>e.kea</title>
 </head>
 
 
-<body onload="myFunction()" style="margin:0;">
-
-
+<body onload="myFunction()">
+  <div id="loader-fullscreen">
+    <p id="loader-titre">e.kea</p>
+    <div id="loader-conteneur">
+        <div id="loader"></div>
+    </div>
+    <p id="loader-redirection">Vous allez être redirigés à la page d'accueil..</p>
+</div>
+<div id="myDiv">
 <header>
     
  <nav>
@@ -25,8 +30,8 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
           <a href="index.html">Accueil</a>
-          <a href="inspiration.html">Inspirations</a>
-          <a href="Produits.html">Produits</a>
+          <a href="Inspiration.html">Inspirations</a>
+          <a href="Produits1.html">Produits</a>
           <a href="service.html">Nos Services</a>
           <a href="contact.html">Nous Contacter</a>
           
@@ -47,13 +52,7 @@
   </div>
 
   <main>
-    <div id="loader-fullscreen">
-      <p id="loader-titre">e.kea</p>
-      <div id="loader-conteneur">
-          <div id="loader"></div>
-      </div>
-      <p id="loader-redirection">Vous allez être redirigés à la page d'accueil..</p>
-  </div>
+   
     
     <div class="container">
             <div class="banner2">
@@ -76,10 +75,21 @@
     </div>
     
   </main>
+  <footer>
+    <Div class="foot">
+      <h2>e-kea</h2>
+      <p><a href="contact.html" style="text-decoration: none;color: white;">Nous Contacter</a></p>
+    </Div>
+  
+  
+  </footer>
+</div>
 
 
   
-
+  <script src="index.js"></script>
+  <script src="load.js"></script>   
+ 
 </body>
 
 </html>

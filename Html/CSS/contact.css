@@ -28,21 +28,22 @@ header {
 .item2 {
   width: 20px;
   height: 20px;
-  position: absolute;
-  justify-content: end;
-  align-items: flex-end;
-  margin: 6% 90%;
+
 }
 .burger {
   border: none;
   background: none;
 }
-nav {
-  Display: flex;
-  height: 15vh;
-  width: 100vw;
-  margin: 0%;
+  nav {
+    display: flex;
+    /* height: 15vh; */
+    width: 100vw;
+    justify-content: space-between;
+    margin: 0%;
+    align-items: center;
+    background-color: beige;
 }
+
 nav li a {
   display: flex;
   justify-content: space-between;
@@ -50,7 +51,7 @@ nav li a {
   text-decoration: none;
   color: white;
   font-size: 20px;
-  font-family: ;
+  font-family: inter;
 }
 
 .img1{
@@ -296,6 +297,47 @@ h1 {
   font-family: inter;
   margin: 10% 0%;
 }
+/*Loader*/
+#loader-fullscreen{
+  background-color: #6B705C;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#loader-titre{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  font-size: 3em;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#loader {
+  
+  width: 120px;
+  height: 120px;
+  border: 8px solid black;
+  border-radius: 50%;
+  border-top: 8px solid #6B705C;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+#loader-conteneur{
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translateX(-50%);
+}
+
+#loader-redirection{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
 
         @media screen and (min-width: 475px) {
           Body {
@@ -327,20 +369,21 @@ h1 {
   .item2 {
     width: 20px;
     height: 20px;
-    position: absolute;
-    justify-content: end;
-    align-items: flex-end;
-    margin: -40% -85%;
+
   }
   .burger {
     border: none;
     background: none;
   }
   nav {
-    Display: flex;
-    height: 15vh;
-    width: 100vw;
-    margin: 0%;
+      display: flex;
+      /* height: 15vh; */
+      width: 100vw;
+      justify-content: space-between;
+      margin: 0%;
+      align-items: center;
+      background-color: beige;
+  }
   }
   nav li a {
     display: flex;
@@ -349,7 +392,7 @@ h1 {
     text-decoration: none;
     color: white;
     font-size: 20px;
-    font-family: ;
+    font-family: inter;
   }
 
   nav li {

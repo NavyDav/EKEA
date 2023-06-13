@@ -10,26 +10,36 @@
 </head>
 
 
-<body>
+<body onload="myFunction()">
+    <div id="loader-fullscreen">
+      <p id="loader-titre">e.kea</p>
+      <div id="loader-conteneur">
+          <div id="loader"></div>
+      </div>
+      <p id="loader-redirection">Vous allez être redirigés à la page d'accueil..</p>
+  </div>
+  <div id="myDiv">
 
     <header>
         <h1 id="titre">e.kea</h1>
           
-            
+            <nav>
             <button class="burger" id="openNav" onclick="openNav()"><img  class="item1" src="ressources images e-kea/🦆 icon _menu_.png"></button>
             <button class="burger" onclick="closeNav()"></button>
             <button class="panier"><a href="panier.html"><img class="item2" src="ressources images e-kea/panier.png"></a></button>
           <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
+              iv class="overlay-content">
               <a href="index.html">Accueil</a>
-              <a href="inspiration.html">Inspirations</a>
-              <a href="Produits.html">Produits</a>
+              <a href="Inspiration.html">Inspirations</a>
+              <a href="Produits1.html">Produits</a>
               <a href="service.html">Nos Services</a>
               <a href="contact.html">Nous Contacter</a>
+              
             </div>
           </div>
-          
+        </nav>
   
     </header>
 
@@ -127,6 +137,8 @@
     
     
     </footer>
-
+  </div>
+  <script src="load.js"></script>
+<script src="index.js"></script>
 </body>
 </html>

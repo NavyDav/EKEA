@@ -1,4 +1,4 @@
-<script>
+
 function myFunction() {
   // Declare variables
   var input, filter, ul, li, a, i, txtValue;
@@ -18,4 +18,3 @@ function myFunction() {
     }
   }
 }
-</script>
