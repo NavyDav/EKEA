@@ -1,38 +1,114 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="CSS/index.css" rel="stylesheet" type="text/css" />
-  <script src="index.js"></script>
-</head>
-
-
-<body>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/Inspi.css" />
+    <title>EKEA</title>
+  </head>
+  <body>
     <header>
-        <h1 id="titre">e.kea</h1>
-        <style>
-          
-          </style>
-          </head>
-          <body>
-            
-            <button class="burger" id="openNav" onclick="openNav()"><img  class="item1" src="ressources images e-kea/🦆 icon _menu_.png"></button>
-            <button class="burger" onclick="closeNav()"></button>
-            <img class="item2" src="ressources images e-kea/panier.png">
-          <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-              <a href="#">Accueil</a>
-              <a href="#">Inspirations</a>
-              <a href="Produits.html">Produits</a>
-              <a href="#">Nos Services</a>
-              <a href="#">Nous Contacter</a>
-            </div>
-          </div>
-          
-  
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="index.html">Acceuil</a>
+          <a href="inspiration.html">Inspiration</a>
+          <a href="Produits1.html">Produits</a>
+          <a href="service.html">Nos services</a>
+          <a href="contact.html">A propos de Nous</a>
+        </div> 
+        <div class="reseaux">
+          <a href="#"><img src="img/ICON/facebook.png" alt="" /></a>
+          <a href="#"><img src="img/ICON/instagram.png" alt="" /></a>
+          <a href="#"><img src="img/ICON/twitter.png" alt="" /></a>
+          <a href="#"><img src="img/ICON/tic-tac.png" alt="" /></a>
+        </div>
+      </div>
+
+      <div class="header">
+        <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+          >&#9776;</span
+        >
+        <h2>e.kea</h2>
+        <a href="panier.html"
+          ><img src="img/Accueil/téléchargement-removebg-preview.png" alt=""
+        /></a>
+      </div>
     </header>
+
+    <main>
+      <div>
+        <div class="photo">
+          <img src="img/Inspiration/imageMainInspi.png" alt="" />
+        </div>
+
+        <div class="title">
+          <h2>Nos insperation</h2>
+          <table>
+            <tr>
+              <td>
+                <img
+                  id="zoomable-image"
+                  src="img/Inspiration/image1Inspi.png"
+                />
+                <p>Chambre Zen</p>
+              </td>
+              <td>
+                <img
+                  id="zoomable-image"
+                  src="img/Inspiration/image2Inspi.png"
+                />
+                <p>Cuisine Moderne</p>
+              </td>
+              <td>
+                <img
+                  id="zoomable-image"
+                  src="img/Inspiration/image3Inspi.png"
+                />
+                <p>Salon Élégance</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  id="zoomable-image"
+                  src="img/Inspiration/image4Inspi.png"
+                />
+                <p>Salon détente</p>
+              </td>
+              <td>
+                <img
+                  id="zoomable-image"
+                  src="img/Inspiration/image5Inspi.png"
+                />
+                <p>Salon Bohème</p>
+              </td>
+              <td>
+                <img
+                  id="zoomable-image"
+                  src="img/Inspiration/image6Inspi.png"
+                />
+                <p>Chambre Urbaine</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      
+    </main>
+
+    <footer>
+      <div class="fotr">
+        <h2>e.kea</h2>
+      </div>
+      <div class="nc">
+        <p>nous contacter</p>
+      </div>
+    </footer>
+
+    <script src="JS/Inspi.js"></script>
+  </body>
+</html>
